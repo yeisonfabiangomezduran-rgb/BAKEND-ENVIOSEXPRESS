@@ -1,6 +1,6 @@
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY . .
+COPY src .
 RUN chmod +x mvnw
 RUN ./mvnw clean package -DskipTests
 EXPOSE 8080
